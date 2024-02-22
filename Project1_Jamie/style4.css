@@ -1,0 +1,441 @@
+body {
+    margin: 15px;
+    height: 100vh;
+    background-color: blue;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    height: 75%;
+    width: 75%;
+}
+
+.pages {
+    position: absolute;
+    border: 3px solid black;
+    background-color: rgb(181, 212, 222);
+    width: 3%;
+    height: 100%;
+    margin-left: -1%;
+    margin-top: -0.3%;
+}
+
+.pages2 {
+    position: absolute;
+    border-right: 3px solid black;
+    width: 70%;
+    height: 100%;
+    margin-left: -1%;
+    margin-top: 4%;
+}
+
+.pages3 {
+    position: absolute;
+    border-right: 3px solid black;
+    width: 50%;
+    height: 100%;
+    margin-left: -1%;
+    margin-top: 2%;
+}
+
+.pagesRight {
+    position: absolute;
+    border: 3px solid black;
+    background-color: rgb(181, 212, 222);
+    width: 3%;
+    height: 100%;
+    top: -0.5%;
+    right: -1%;
+}
+
+.pagesRight2 {
+    border-right: 3px solid black;
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.pagesRight3 {
+    border-right: 3px solid black;
+    width: 20%;
+    height: 100%;
+    margin-left: -1%;
+}
+
+.containerLeft {
+    float: right;
+    position: relative;
+    background-color: rgb(209, 236, 245);
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
+    margin-right: -1px;
+    animation: container;
+    animation-duration: 2s;
+}
+
+@keyframes container {
+    0% {scale: 80%;}
+    100% {scale: 100%;}
+}
+
+.headline {
+    position: absolute;
+    width: 70%;
+    z-index: 9;
+    margin-top: -7%;
+    margin-left: -3%;
+    z-index: 9;
+}
+
+.text {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 35%;
+    max-width: 35%;
+    overflow: hidden;
+}
+
+.text2 {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 60%;
+    width: 30%;
+    max-width: 30%;
+    overflow: hidden;
+}
+
+
+.vl {
+    position: absolute;
+    border-left: 3px solid rgb(0, 0, 0);
+    height: 100%;
+    left: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 3px black;
+}
+
+a:hover{
+    filter: brightness(80%);
+}
+
+#bigtext {
+    position: absolute;
+    bottom: 50%;
+    right: 1%;
+    -webkit-text-stroke: 3px black;
+    font-family: Helvetica, sans-serif;
+    font-size: 45vh;
+    color: white;
+    font-weight: 800;
+    z-index: 9;
+    text-shadow: 0.4rem 0.4rem black;
+    animation-name: bigtext;
+    animation-duration: 2s;
+    z-index: 7;
+}
+
+@keyframes bigtext {
+    0% {right: 10%;}
+    100% {right: 2%;}
+}
+
+#bigtext2 {
+    position: absolute;
+    bottom: 15%;
+    left: -15%;
+    -webkit-text-stroke: 3px black;
+    font-family: Helvetica, sans-serif;
+    font-size: 250px;
+    color: white;
+    font-weight: 800;
+    z-index: 9;
+    text-shadow: 0.4rem 0.4rem black;
+    z-index: 7;
+}
+
+#image1{
+    position: absolute;
+    bottom: -5%;
+    left: 8%;
+    border: 3px solid black;
+    width: 35%;
+    height: auto;
+    animation: left;
+    animation-duration: 2s;
+    border-radius: 5px;
+    box-shadow: 0.1rem 0.1rem black;
+    z-index: 7;
+}
+
+@keyframes left {
+    0% {left: 20%;}
+    100% {left: 8%;}
+}
+
+@keyframes right {
+    0% {right: -50%;}
+    100% {right: -60%;}
+}
+
+#image2{
+    position: relative;
+    bottom: -5%;
+    right: -60%;
+    border: 3px solid black;
+    width: 48%;
+    height: auto;
+    animation: right;
+    animation-duration: 2s;
+    border-radius: 5px;
+    box-shadow: 0.1rem 0.1rem black;
+    z-index: 7;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 9vw;
+    -webkit-text-stroke: 3px black;
+    color: white;
+    letter-spacing: -4px;
+    line-height: 94%;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 3px;
+    text-shadow: 0.4rem 0.4rem black;
+    animation-name: title;
+    animation-duration: 2s;
+}
+
+@keyframes title {
+    0% {margin-left: 4%;}
+    100% {margin-left: 0%;}
+}
+
+h2 {
+    float: left;
+    margin: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: -0.5px;
+    line-height: 99%;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 3px;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 45px;
+    letter-spacing: -0.5px;
+    line-height: 91%;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 10%;
+}
+
+h4 {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 6px;
+}
+
+h5 {
+    position: absolute;
+    float: right;
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 6px;
+}
+
+h6 {
+    position: absolute;
+    float: right;
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 35px;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.8vh;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 3px;
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        height: 95%;
+        width: 90%;
+    }
+    .containerLeft {
+        float: left;
+        position: relative;
+        background-color: rgb(209, 236, 245);
+        height: 100%;
+        width: 100%;
+        border: 3px solid black;
+        margin-right: -1px;
+        margin-top: 5%;
+    }
+
+    .vl {
+        display: none;
+    }
+    
+    .headline {
+        position: absolute;
+        width: 90%;
+        z-index: 9;
+        margin-top: 15%;
+        margin-left: -4%;
+    }
+
+    h1 {
+        font-size: 18vw;
+    }
+    p {
+        font-family: Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 200;
+        text-align: left;
+        margin-top: 3px;
+    }
+
+    .pages {
+        display: none;
+    }
+    
+    .pages2 {
+        display: none;
+
+    }
+    
+    .pages3 {
+        display: none;
+    }
+
+    .pagesRight {
+        display: none;
+    }
+    
+    .pagesRight2 {
+        display: none;
+
+    }
+    
+    .pagesRight3 {
+        display: none;
+
+    }
+
+    .text {
+        position: absolute;
+        margin-top: 60%;
+        margin-left: 5%;
+        width: 80%;
+        max-width: 80%;
+        overflow: hidden;
+    }
+    
+    .text2 {
+        position: absolute;
+        margin-top: 115%;
+        margin-left: 5%;
+        width: 80%;
+        max-width: 80%;
+        overflow: hidden;
+    }
+
+    #bigtext {
+        position: absolute;
+        bottom: -35%;
+        right: 5%;
+        -webkit-text-stroke: 3px black;
+        font-family: Helvetica, sans-serif;
+        font-size: 300px;
+        color: white;
+        font-weight: 800;
+        z-index: 9;
+    }
+
+    #bigtext2 {
+        position: absolute;
+        bottom: 85%;
+        left: -5%;
+        -webkit-text-stroke: 3px black;
+        font-family: Helvetica, sans-serif;
+        font-size: 100px;
+        color: rgb(148, 228, 29);
+        font-weight: 800;
+        z-index: 9;
+        text-shadow: 0.4rem 0.4rem black;
+    }
+
+    #image1{
+        position: absolute;
+        bottom: -5%;
+        left: 3%;
+        border: 3px solid black;
+        width: 60%;
+        height: auto;
+        animation: left;
+        animation-duration: 2s;
+        border-radius: 5px;
+        box-shadow: 0.1rem 0.1rem black;
+    }
+    
+    @keyframes left {
+        0% {left: 20%;}
+        100% {left: 3%;}
+    }
+    
+    @keyframes right {
+        0% {right: -20%;}
+        100% {right: -32%;}
+    }
+    
+    #image2{
+        position: relative;
+        bottom: 2%;
+        right: -32%;
+        border: 3px solid black;
+        width: 70%;
+        height: auto;
+        animation: right;
+        animation-duration: 2s;
+        border-radius: 5px;
+        box-shadow: 0.1rem 0.1rem black;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke: 3px black;
+    }
+    
+    a:hover{
+        filter: brightness(80%);
+    }
+
+}
